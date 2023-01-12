@@ -88,7 +88,7 @@ boot_system()
     # shellcheck disable=2086
     exec \
         env -i TERM=linux PATH=/bin:/sbin:/usr/bin:/usr/sbin \
-        switch_root /mnt/root "${init:-/sbin/init}" $init_args ||
+        switch_root /mnt/root "${root_init:-/sbin/init}" $init_args ||
         panic "failed to boot system"
 }
 
