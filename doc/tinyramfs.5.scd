@@ -49,7 +49,16 @@ hostonly
 root_type
 
 	The filesystem you're using for your root device (eg. ext4).
+	
+init
+	
+	Path to the init script or program to boot the initramfs with.
 
+root_init
+
+	Path to the init script or program to boot the system with after the
+	initramfs finishes.
+	
 ## KEYMAP
 
 keymap_path
